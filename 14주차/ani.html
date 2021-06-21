@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+#header{
+    background-color: aqua;
+    padding-top: 10px;
+    padding-left: 17cm;
+}
+#nav{
+    width: 15%;
+    background-color: blueviolet;
+    float: left;
+}
+#container{
+    width: 85%;
+    background-color:skyblue;
+    float:right;
+}
+#footer{
+    background-color: crimson;
+    clear: both;
+}
+img {
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+#container ul:active{
+    display: none;
+}
+#container div{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes example{
+    0%{
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+    25%{
+        background-color: yellow;
+        left: 200px;
+        top: 0px;
+    }
+    50%{
+        background-color: green;
+        left: 200px;
+        top: 200px;
+    }
+    75%{
+        background-color: blue;
+        left: 0px;
+        top: 200px;
+    }
+    100%{
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+}
+</style>
+</head>
+<body>
+<div id="header">
+   <h1>my homepage</h1>
+</div>
+<div id="nav">
+   <ul>
+       <li>홈페이지</li>
+       <li>자기소개</li>
+       <li>학교생활</li>
+       <li>방과후</li>
+       <li>오늘계획</li>
+   </ul>
+   <hr>
+</div>
+<div id="container">
+    <h2>TO DO LIST</h2>
+    <ul>
+        <li>온라인 수업 듣기</li>
+        <li>수행 준비</li>
+        <li>학원 가기</li>
+    </ul>
+    <hr>
+    <div></div>    
+</div>
+<div id="footer">
+   
+</div>
+</body>
+</html>
